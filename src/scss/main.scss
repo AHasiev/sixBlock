@@ -1,0 +1,335 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+@import "brand-repair";
+@import "equipment-repair";
+@import "service-prices";
+@import "footer";
+
+.container {
+  display: flex;
+  width: 1426px;
+}
+
+.container__burger {
+  width: 300px;
+  padding-top: 30px;
+
+  .logo {
+    height: 50px;
+    width: 96px;
+  }
+
+  .search {
+    height: 40px;
+    width: 40px;
+    margin-left: 100px;
+  }
+
+  li {
+    margin-top: 20px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+  }
+
+  .container__burger__contacts {
+    margin-top: 250px;
+
+    .btn__phone,
+    .btn__chat {
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .contacts__phone {
+      font-family: TT Lakes;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      padding: 10px 0px 0px 10px;
+    }
+  }
+
+  .container__burger__language {
+    margin-top: 100px;
+  }
+
+  .contacts__mail {
+    margin: 20px 0px 0px 10px;
+  }
+}
+
+.header__main {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__modal__feedback {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    left: 1000px;
+    height: 940px;
+    width: 513px;
+    overflow: auto;
+    background-color: $white;
+    box-shadow: -15px 3px 24px -4px #c8c1c1;
+
+    .modal__header {
+      display: flex;
+      align-items: center;
+
+      .btn__close {
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+        background-color: $white;
+        width: 72px;
+      }
+      .modal__title {
+        font-family: TT Lakes;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        margin-left: 32px;
+      }
+    }
+
+    .modal__input {
+      margin-top: 96px;
+      margin-left: 100px;
+
+      .inpit__name {
+        height: 48px;
+        width: 376px;
+        margin: 0px 32px 16px 32px;
+        ::placeholder {
+          color: #b5b6bc;
+        }
+      }
+
+      .input__message {
+        height: 118px;
+        width: 376px;
+        border-radius: 8px;
+        margin: 0px 32px 0px 32px;
+        color: #b5b6bc;
+      }
+
+      .modal__text {
+        margin: 10px 32px 16px 32px;
+        span {
+          color: #ff3e79;
+        }
+      }
+
+      .modal__sendBtn {
+        height: 32px;
+        width: 136px;
+        display: flex;
+        align-items: center;
+        background-color: #ff3e79;
+        border-radius: 16px;
+        margin: 50px 32px 0px 245px;
+
+        a {
+          font-family: TT Lakes;
+          font-size: 12px;
+          line-height: 24px;
+          letter-spacing: -0.1px;
+          text-align: right;
+          color: $white;
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  .header__modal__requestACall {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    left: 1040px;
+    height: 940px;
+    width: 513px;
+    overflow: auto;
+    background-color: $white;
+    box-shadow: -15px 3px 24px -4px #c8c1c1;
+
+    .requestACall__header {
+      display: flex;
+      align-items: center;
+
+      .btn__closeChat {
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+        background-color: $white;
+        width: 72px;
+      }
+
+      .modal__title {
+        font-family: TT Lakes;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        margin-left: 32px;
+      }
+    }
+
+    .requestACall__input {
+      margin-top: 50px;
+      margin-left: 100px;
+
+      .inpit__name {
+        height: 48px;
+        width: 376px;
+        margin: 0px 32px 16px 32px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        padding: 12px 204px 12px 12px;
+        ::placeholder {
+          color: #b5b6bc;
+        }
+      }
+
+      .modal__text {
+        margin: 10px 32px 16px 32px;
+        span {
+          color: #ff3e79;
+        }
+      }
+
+      .requestACall__sendBtn {
+        height: 32px;
+        width: 136px;
+        display: flex;
+        align-items: center;
+        background-color: #ff3e79;
+        border-radius: 16px;
+        margin: 50px 32px 0px 245px;
+
+        a {
+          font-family: TT Lakes;
+          font-size: 12px;
+          line-height: 24px;
+          letter-spacing: -0.1px;
+          text-align: right;
+          color: $white;
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  .header__title {
+    display: flex;
+    font-family: TT Lakes Bold;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    text-align: left;
+
+    .title {
+      margin-left: 30px;
+    }
+  }
+
+  .header__subtitle {
+    display: flex;
+  }
+
+  .header__leave-feedback,
+  .header__status-remonta {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    .header__leave-feedback__text,
+    .header__status-remonta__text {
+      margin-right: 15px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    font-family: "TT Lakes Bold";
+    font-size: 16px;
+    line-height: 24px;
+    color: $menu-text-color;
+    margin-top: 20px;
+  }
+
+  ul > li:first-child {
+    background: $white;
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    width: 233px;
+    text-align: center;
+  }
+
+  li {
+    cursor: pointer;
+  }
+}
+
+.container__header {
+  width: 1120px;
+  padding: 30px 20px 21px 1px;
+  background: $light-gray;
+
+  .main__content {
+    width: 1100px;
+    display: flex;
+    padding: 25px 0px 0px 30px;
+
+    .content {
+      width: 526px;
+
+      .content__text {
+        width: 480px;
+        font-family: TT Lakes;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        padding-left: 8px;
+      }
+
+      .read-more {
+        padding: 10px;
+        display: none;
+      }
+
+      .icon__revers {
+        background-color: url(/img/icon.png);
+        transform: rotate(180deg);
+      }
+
+      .btn__read-more {
+        border: none;
+        cursor: pointer;
+        font-family: TT Lakes;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        text-align: left;
+      }
+    }
+
+    .content__img {
+      height: 383px;
+      width: 531px;
+      margin-left: 50px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.equipment-repair {
+  width: 1119px;
+  margin: 0 auto;
+  background: $light-gray;
+  margin-top: 50px;
+
+  .equipment-repair__title {
+    height: 56px;
+    background-color: $white;
+
+    .equipment-repair__title__text {
+      padding: 16px 772px 16px 32px;
+    }
+  }
+
+  .equipment-repair__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 30px 20px 21px 0px;
+  }
+
+  .equipment-repair__item {
+    height: 160px;
+    width: 240px;
+    border-radius: 6px;
+    background-color: $white;
+    margin-left: 32px;
+
+    .item__text {
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      margin: 16px 88px 20px 16px;
+    }
+
+    .item__arrow {
+      margin: 70px 16px 16px 184px;
+    }
+  }
+
+  .equpment-repair__showAll {
+    padding: 10px 722px 10px 35px;
+
+    .showAll__button {
+      border: none;
+      cursor: pointer;
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    //   text-align: left;
+    }
+  }
+}

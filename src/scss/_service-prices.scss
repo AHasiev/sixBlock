@@ -1,0 +1,112 @@
+.service-prices {
+  width: 1119px;
+  background: $light-gray;
+  // margin-top: 50px;
+
+  .service-prices__title {
+    height: 56px;
+    background-color: $white;
+    padding: 16px 848px 16px 35px;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-top: 50px;
+  }
+
+  .service-prices__header {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+    width: 1120px;
+    padding: 20px 0px 10px 0px;
+
+    .service-prices__repair-service {
+      width: 443px;
+      margin-left: 40px;
+    }
+
+    .service-prices__price {
+      width: 352px;
+      padding-left: 92px;
+    }
+
+    .service-prices__term {
+      width: 410px;
+      padding-left: 10px;
+    }
+  }
+
+  .order__button {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #ff3e79;
+    height: 32px;
+    width: 119px;
+
+    a {
+      color: $white;
+      padding-left: 13px;
+      font-family: TT Lakes;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: -0.1px;
+      text-align: right;
+    }
+  }
+
+  .service-prices {
+    height: 324px;
+    width: 1056px;
+    background-color: $white;
+    padding: 10px 10px;
+    margin-left: 35px;
+
+    .service-prices__description {
+      display: flex;
+      align-content: center;
+      margin-top: 30px;
+
+      .description__repair-service {
+        width: 463px;
+      }
+
+      .description__price {
+        width: 326px;
+        padding-left: 90px;
+      }
+
+      .description__term {
+        width: 292px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  .service-prices__footer {
+    height: 60px;
+    width: 421px;
+    margin-left: 35px;
+    margin-top: 30px;
+
+    .footer__text {
+      font-family: TT Lakes;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      text-align: left;
+    }
+
+    .footer__offer {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      font-family: TT Lakes;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-align: left;
+    }
+  }
+}
