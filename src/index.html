@@ -8,7 +8,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="container__burger burger">
+      <div class="container__burger">
+        <button class="btn__close__burger">
+          <img src="img/close.png" alt="" />
+        </button>
         <img class="logo" src="img/Group.png" alt="logo" />
         <img class="search" src="img/search.png" alt="" />
         <ul>
@@ -37,12 +40,32 @@
         </div>
       </div>
       <div class="container__header">
+        <div class="container__header__tablet">
+          <img class="burger__menu" src="img/burger.png" alt="">
+          <img class="logo" src="img/Group.png" alt="">
+          <div class="container__burger__contacts">
+            <button class="btn__phone">
+              <img src="img/chat copy.png" alt="contact" />
+            </button>
+            <button class="btn__chat"><img src="img/chat.png" alt="" /></button>
+            <img src="img/profile.png" alt="" />
+          </div>
+          <div class="header__subtitle">
+            <div class="header__leave-feedback">
+              <img src="img/repair.png" alt="" />
+            </div>
+            <div class="header__status-remonta">
+              <img src="img/checkstatus.png" alt="" />
+            </div>
+          </div>
+        </div>
         <header class="header__main">
           <div class="header__modal__feedback">
             <div class="modal__header">
               <button class="btn__close">
                 <img src="img/close.png" alt="" />
               </button>
+              
               <img src="img/highlight.png" alt="" />
               <div class="modal__title">Обратная связь</div>
             </div>
@@ -60,7 +83,9 @@
                 id=""
                 cols="10"
                 rows="10"
-              >Сообщение</textarea>
+              >
+Сообщение</textarea
+              >
               <div class="modal__text">
                 Нажимая “отправить”, вы даете согласие на
                 <span>обработку персональных данных </span> и соглашаетесь с
@@ -96,7 +121,10 @@
 
           <div class="header">
             <div class="header__title">
+              <div class="header__title__highlight">
               <img src="img/highlight.png" alt="" />
+            </div>
+            
               <div class="header__title title">Услуги и сервисы</div>
             </div>
             <div class="header__subtitle">
@@ -162,7 +190,7 @@
           <section class="products">
             <div class="products__title">
               <div class="products__title__text">
-                Ремонт техники различных брендов
+                РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ
               </div>
             </div>
             <div class="products__container">
@@ -386,7 +414,7 @@
           <section class="equipment-repair">
             <div class="equipment-repair__title">
               <div class="equipment-repair__title__text">
-                Ремонт различных видов техники
+                РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ
               </div>
             </div>
             <div class="equipment-repair__container">
@@ -414,10 +442,32 @@
                   <img src="img/go.png" alt="" />
                 </div>
               </div>
+              <div class="equipment-repair__item__showAll">
+                <div class="equipment-repair__item">
+                  <div class="item__text">Ремонт планшетов</div>
+                  <div class="item__arrow">
+                    <img src="img/go.png" alt="" />
+                  </div>
+                </div>
+                <div class="equipment-repair__item">
+                  <div class="item__text">Ремонт ПК</div>
+                  <div class="item__arrow">
+                    <img src="img/go.png" alt="" />
+                  </div>
+                </div>
+                <div class="equipment-repair__item">
+                  <div class="item__text">Ремонт мониторов</div>
+                  <div class="item__arrow">
+                    <img src="img/go.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="equpment-repair__showAll">
               <img class="showAll__img" src="img/icon.png" alt="" />
-              <button class="showAll__button">Показать все</button>
+              <button class="showAll__button" onclick="equipmentRepair()">
+                Показать все
+              </button>
             </div>
           </section>
           <section class="service-prices">
@@ -498,7 +548,8 @@
           <script src="/swiperr.js"></script>
           <script src="/read-more.js"></script>
           <script src="/modal.js"></script>
-          <script src="/modal_chat.js"></scriptsrc>
+          <script src="/modal_chat.js"></script>
+          <script src="/equipment-repair.js"></script>
           <script src="/index.js"></script>
         </main>
         <footer>

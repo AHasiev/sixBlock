@@ -3,12 +3,12 @@ function showAll() {
     const btn = document.querySelector(".showAll__btn");
     const imgDown = document.querySelector(".imgDown");
   
-    if (btn.innerHTML === "Показать все") {
-      btn.innerHTML = "Скрыть";
-      more.style.display = "flex";
-    } else {
+    if (btn.innerHTML === "Скрыть") {
       btn.innerHTML = "Показать все";
-      more.style.display = "none";
+      more.classList.toggle('more-flex')
+    } else {
+      btn.innerHTML = "Скрыть";
+      more.classList.toggle('more-flex')
     }
   
     imgDown.classList.toggle("imgUp");

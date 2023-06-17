@@ -7,7 +7,10 @@
     height: 56px;
     background-color: $white;
     padding: 16px 848px 16px 35px;
-    font-family: TT Lakes;
+    font-family: TT Lakes Medium;
+    font-weight: 500;
+    font-style: normal;
+    color: #7e7e82;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -24,16 +27,29 @@
     .service-prices__repair-service {
       width: 443px;
       margin-left: 40px;
+      font-family: TT Lakes Regular;
+      font-weight: normal;
+      font-style: normal;
+      color: #7e7e82;
+      font-size: 16px;
     }
 
     .service-prices__price {
       width: 352px;
       padding-left: 92px;
+      font-family: TT Lakes Regular;
+      font-weight: normal;
+      font-style: normal;
+      color: #7e7e82;
     }
 
     .service-prices__term {
       width: 410px;
       padding-left: 10px;
+      font-family: TT Lakes Regular;
+      font-weight: normal;
+      font-style: normal;
+      color: #7e7e82;
     }
   }
 
@@ -48,7 +64,9 @@
     a {
       color: $white;
       padding-left: 13px;
-      font-family: TT Lakes;
+      font-family: TT Lakes Regular;
+      font-weight: normal;
+      font-style: normal;
       font-size: 12px;
       line-height: 24px;
       letter-spacing: -0.1px;
@@ -62,6 +80,10 @@
     background-color: $white;
     padding: 10px 10px;
     margin-left: 35px;
+    font-family: TT Lakes Regular;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
 
     .service-prices__description {
       display: flex;

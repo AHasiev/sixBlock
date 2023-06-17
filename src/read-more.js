@@ -3,12 +3,12 @@ function readMore() {
   const btnReadMore = document.querySelector(".btn__read-more");
   const icon = document.querySelector(".icon");
 
-  if (btnReadMore.innerHTML === "Читать далее") {
-    btnReadMore.innerHTML = "Скрыть";
-    readMoreText.style.display = "block";
+  if (btnReadMore.innerHTML === "Скрыть") {
+    btnReadMore.innerHTML = "Читать далее";
+    readMoreText.classList.toggle("content-flex");
   } else {
     btnReadMore.innerHTML = "Читать далее";
-    readMoreText.style.display = "none";
+    readMoreText.classList.toggle("content-flex");
   }
 
   icon.classList.toggle("icon__revers");

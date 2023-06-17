@@ -7,9 +7,14 @@
     height: 56px;
     width: 1120px;
     background-color: $white;
-  
+
     .products__title__text {
-      padding: 16px 772px 16px 32px;
+      padding: 16px 700px 16px 32px;
+      font-family: TT Lakes Medium;
+      font-size: 16px;
+      font-weight: 500;
+    font-style: normal;
+    color: #7E7E82;
     }
   }
 
@@ -31,14 +36,14 @@
       margin-bottom: 24px;
       background-color: white;
     }
-    
+
     .products__item__lenovoImg {
       height: 32px;
       width: 126px;
       margin-top: 20px;
       margin-left: 6px;
     }
-    
+
     .products__item__lenovo-arrow {
       margin-left: 51px;
       margin-top: 16px;
@@ -50,79 +55,79 @@
       margin-top: 19px;
       margin-left: 5px;
     }
-    
+
     .products__item__samsung-arrow {
       margin-left: 48px;
       margin-top: 16px;
     }
-    
+
     .products__item__appleImg {
       height: 44px;
       width: 44px;
       margin-left: 12px;
       margin-top: 11px;
     }
-    
+
     .products__item__apple-arrow {
       margin-left: 126px;
       margin-top: 15px;
     }
-    
+
     .products__item_viewSonicImg {
       height: 21px;
       width: 148px;
       margin-left: 3px;
       margin-top: 26px;
     }
-    
+
     .products__item_viewSonic-arrow {
       margin-left: 32px;
       margin-top: 15px;
     }
-    
+
     .products__item__boschImg {
       height: 34px;
       width: 132px;
       margin-left: 12px;
       margin-top: 17px;
     }
-    
+
     .products__item__bosch-arrow {
       margin-left: 39px;
       margin-top: 15px;
     }
-    
+
     .products__item__hpImg {
       height: 52px;
       width: 53px;
       margin-left: 8px;
       margin-top: 9px;
     }
-    
+
     .products__item__hp-arrow {
       margin-left: 122px;
       margin-top: 15px;
     }
-    
+
     .products__item__acerImg {
       height: 24px;
       width: 96px;
       margin-top: 23px;
       margin-left: 14px;
     }
-    
+
     .products__item__acer_arrow {
       margin-left: 72px;
       margin-top: 15px;
     }
-    
+
     .products__item__sonyImg {
       height: 26px;
       width: 135px;
       margin-top: 22px;
       margin-left: 9px;
     }
-    
+
     .products__item__sony-arrow {
       margin-left: 39px;
       margin-top: 14px;
@@ -132,25 +137,28 @@
       display: none;
       width: 100%;
     }
-    
+
+    .more-flex {
+      display: flex !important;
+    }
+
     .more-container {
       display: flex;
       width: 100%;
     }
-    
-    
   }
 
   .showAll {
     display: flex;
     align-items: center;
     margin-left: 26px;
-    
   }
-  
+
   .showAll__btn {
-    font-family: TT Lakes;
+    font-family: TT Lakes Regular;
     font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
@@ -161,17 +169,15 @@
     background: #f2f2f2;
     cursor: pointer;
   }
-  
+
   .imgDown {
     height: 13px;
     width: 10px;
   }
-  
+
   .imgUp {
-    background-color: url(/img/icon.png);
     transform: rotate(180deg);
   }
-
 }
 
 .swiper-container {
@@ -238,8 +244,11 @@
   }
 
   .header-title {
-    font-family: "TT Lakes";
-    font-size: 16px;
+    font-family: "TT Lakes Medium";
+    font-weight: 500;
+    font-style: normal;
+    color: #7E7E82;
+    font-size: 16px; 
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: left;

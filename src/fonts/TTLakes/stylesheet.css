@@ -284,7 +284,7 @@
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'TT Lakes';
     src: url('TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
@@ -293,7 +293,7 @@
         url('TTLakes-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'TT Lakes';
@@ -361,7 +361,7 @@
     font-style: italic;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'TT Lakes';
     src: url('TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
@@ -370,7 +370,7 @@
         url('TTLakes-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'TT Lakes Condensed';
@@ -405,7 +405,7 @@
     font-style: italic;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'TT Lakes';
     src: url('TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
@@ -414,7 +414,7 @@
         url('TTLakes-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'TT Lakes';

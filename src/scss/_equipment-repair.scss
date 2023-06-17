@@ -5,6 +5,10 @@
   margin-top: 50px;
 
   .equipment-repair__title {
+    font-family: "TT Lakes Medium";
+    font-weight: 500;
+    font-style: normal;
+    color: #7e7e82;
     height: 56px;
     background-color: $white;
 
@@ -19,39 +23,56 @@
     flex-wrap: wrap;
     align-content: space-between;
     padding: 30px 20px 21px 0px;
-  }
 
-  .equipment-repair__item {
-    height: 160px;
-    width: 240px;
-    border-radius: 6px;
-    background-color: $white;
-    margin-left: 32px;
-
-    .item__text {
-      font-family: TT Lakes;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      margin: 16px 88px 20px 16px;
+    .equipment-repair__item__showAll {
+      display: none;
     }
 
-    .item__arrow {
-      margin: 70px 16px 16px 184px;
+    .equipment-repair__item__showAll-flex {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .equipment-repair__item {
+      height: 160px;
+      width: 240px;
+      border-radius: 6px;
+      background-color: $white;
+      margin-left: 32px;
+
+      .item__text {
+        font-family: "TT Lakes Medium";
+        font-weight: 500;
+        font-style: normal;
+        color: #7e7e82;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin: 16px 88px 20px 16px;
+      }
+
+      .item__arrow {
+        margin: 70px 16px 16px 184px;
+      }
     }
   }
-
   .equpment-repair__showAll {
     padding: 10px 722px 10px 35px;
 
+    .showAll__imgUp {
+      transform: rotate(180deg);
+    }
+    
     .showAll__button {
       border: none;
       cursor: pointer;
-      font-family: TT Lakes;
+      font-family: TT Lakes Regular;
+      font-weight: normal;
+      font-style: normal;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
-    //   text-align: left;
+      //   text-align: left;
     }
   }
 }
