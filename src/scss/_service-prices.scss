@@ -1,107 +1,166 @@
 .service-prices {
   width: 1119px;
-  background: $light-gray;
-  // margin-top: 50px;
+  background: #efefef;
+  height: 576px;
+  font-family: TT Lakes;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+
+  @media (max-width: 320px) {
+    width: 320px;
+    margin-top: 30px;
+    height: 500px;
+  }
 
   .service-prices__title {
     height: 56px;
     background-color: $white;
-    padding: 16px 848px 16px 35px;
-    font-family: TT Lakes Medium;
+    padding: 16px 0px 16px 36px;
+    font-family: TT Lakes Compressed;
     font-weight: 500;
     font-style: normal;
     color: #7e7e82;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    margin-top: 50px;
+
+    @media (max-width: 320px) {
+      width: 320px;
+    }
   }
 
   .service-prices__header {
     display: flex;
     justify-content: space-between;
     height: 54px;
-    width: 1120px;
-    padding: 20px 0px 10px 0px;
+    width: 1073px;
+    padding: 20px 0px 10px 18px;
+    background: $light-gray;
+
+    @media (max-width: 768px) {
+      width: 768px;
+    }
+
+    @media (max-width: 321px) {
+      display: none;
+    }
 
     .service-prices__repair-service {
       width: 443px;
       margin-left: 40px;
-      font-family: TT Lakes Regular;
+      font-family: TT Lakes;
       font-weight: normal;
       font-style: normal;
       color: #7e7e82;
       font-size: 16px;
+
+      @media (max-width: 768px) {
+        width: 768px;
+      }
     }
 
     .service-prices__price {
       width: 352px;
-      padding-left: 92px;
-      font-family: TT Lakes Regular;
+      padding-left: 100px;
+      font-family: TT Lakes;
       font-weight: normal;
       font-style: normal;
       color: #7e7e82;
+
+      @media (max-width: 768px) {
+        width: 768px;
+      }
     }
 
     .service-prices__term {
       width: 410px;
-      padding-left: 10px;
-      font-family: TT Lakes Regular;
+      padding-left: 30px;
+      font-family: TT Lakes;
       font-weight: normal;
       font-style: normal;
       color: #7e7e82;
     }
   }
 
-  .order__button {
-    display: flex;
-    align-items: center;
-    border-radius: 16px;
-    background-color: #ff3e79;
-    height: 32px;
-    width: 119px;
+  .service-price__main {
+    height: 340px;
+    width: 1056px;
+    background: $white;
+    padding: 16px 24px 0px 24px;
+    margin-left: 32px;
 
-    a {
-      color: $white;
-      padding-left: 13px;
-      font-family: TT Lakes Regular;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 12px;
-      line-height: 24px;
-      letter-spacing: -0.1px;
-      text-align: right;
+    @media (max-width: 768px) {
+      width: 720px;
+    }
+
+    @media (max-width: 321px) {
+      display: none;
     }
   }
 
-  .service-prices {
-    height: 324px;
-    width: 1056px;
-    background-color: $white;
-    padding: 10px 10px;
-    margin-left: 35px;
-    font-family: TT Lakes Regular;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 16px;
+  .service-prices__description {
+    display: flex;
+    align-content: center;
+    margin-top: 30px;
 
-    .service-prices__description {
+    @media (max-width: 768px) {
+      width: 768px;
+    }
+
+    .description__repair-service {
+      width: 463px;
+
+      @media (max-width: 768px) {
+        width: 237px;
+      }
+    }
+
+    .description__price {
+      width: 326px;
+      padding-left: 90px;
+
+      @media (max-width: 768px) {
+        width: 180px;
+      }
+    }
+
+    .description__term {
+      width: 292px;
+      padding-left: 40px;
+
+      @media (max-width: 768px) {
+        width: 135px;
+      }
+    }
+
+    .order__button {
       display: flex;
-      align-content: center;
-      margin-top: 30px;
+      align-items: center;
+      border-radius: 16px;
+      background-color: #ff3e79;
+      height: 32px;
+      width: 119px;
 
-      .description__repair-service {
-        width: 463px;
+      @media (max-width: 768px) {
+        width: 96px;
       }
 
-      .description__price {
-        width: 326px;
-        padding-left: 90px;
-      }
-
-      .description__term {
-        width: 292px;
-        padding-left: 40px;
+      a {
+        color: $white;
+        padding-left: 13px;
+        font-family: TT Lakes;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        text-align: right;
       }
     }
   }
@@ -111,24 +170,101 @@
     width: 421px;
     margin-left: 35px;
     margin-top: 30px;
+    // background-color: #F8F8F8;
+
+    @media (max-width: 320px) {
+      margin-left: 10px;
+    }
 
     .footer__text {
       font-family: TT Lakes;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      text-align: left;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (max-width: 320px) {
+        width: 320px;
+      }
     }
 
     .footer__offer {
       margin-top: 20px;
       display: flex;
       align-items: center;
-      font-family: TT Lakes;
+      font-family: TT Lakes Compressed;
+      font-weight: normal;
+      font-style: normal;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
       text-align: left;
     }
+  }
+}
+
+.swiper__container {
+  display: flex;
+  // position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+
+  @media (min-width: 321px) {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+
+    .swiper-slide {
+      margin-right: 30px;
+
+      .swiper__service-prices {
+        width: 240px;
+        // height: 160px;
+        font-family: "TT Lakes";
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+        font-weight: normal;
+        font-style: normal;
+        // margin-right: 60px;
+        padding-left: 10px;
+        border-radius: 6px;
+        border: solid #eaeaea 1px;
+        background: white;
+        }
+  
+        .service-prices__repair-service,
+        .service-prices__price,
+        .service-prices__term {
+          color: #7e7e82;
+        }
+  
+        .description__term {
+          display: flex;
+          justify-content: space-between;
+  
+          .order__button {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            width: 110px;
+            height: 32px;
+            border-radius: 16px;
+            background: #ff3e79;
+            color: $white;
+            margin-left: 30px;
+          }
+        }
+    }
+
+      
+    // }
+  }
+
+  .swiper-pagination {
+    background: gray;
   }
 }

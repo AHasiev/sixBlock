@@ -1,35 +1,35 @@
-// @include font-face("notosans", "notosans", 400);
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes/TTLakes-Medium.eot");
+  src: local("TT Lakes Compressed"), local("TTLakes-Medium"),
+    url("../fonts/TTLakes/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakes-Medium.woff2") format("woff2"),
+    url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes/TTLakes-Medium.eot');
-    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-        url('../fonts/TTLakes/TTLakes-Medium.eot?') format('embedded-opentype'),
-        url('../fonts/TTLakes/TTLakes-MediumItalic.woff') format('woff');
-        // url('TTLakes-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes/TTLakes-Regular.eot');
-    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-        url('../fonts/TTLakes/TTLakes-Regular.eot') format('embedded-opentype'),
-        url('../fonts/TTLakes/TTLakes-Thin.woff') format('woff');
-        // url('TTLakes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'TT Lakes';
-    src: url('../fonts/TTLakes/TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('../fonts/TTLakes/TTLakes-Bold.eot') format('embedded-opentype'),
-        url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff');
-        // url('TTLakes-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
+  font-family: "TT Lakes Compressed";
+  src: url("../fonts/TTLakes/TTLakesCompressed-Black.eot");
+  src: local("TT Lakes Compressed Black"), local("TTLakesCompressed-Black"),
+    url("../fonts/TTLakes/TTLakesCompressed-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakesCompressed-Black.woff2") format("woff2"),
+    url("../fonts/TTLakes/TTLakesCompressed-Black.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakesCompressed-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Condensed";
+  src: url("../fonts/TTLakes/TTLakesCondensed-Bold.eot");
+  src: local("TT Lakes Condensed Bold"), local("TTLakesCondensed-Bold"),
+    url("../fonts/TTLakes/TTLakesCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TTLakes/TTLakesCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/TTLakes/TTLakesCondensed-Bold.woff") format("woff"),
+    url("../fonts/TTLakes/TTLakesCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

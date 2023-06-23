@@ -4,8 +4,16 @@
   background: $light-gray;
   margin-top: 50px;
 
+  @media (max-width: 768px) {
+    width: 768px;
+  }
+
+  @media (max-width: 320px) {
+    width: 320px;
+  }
+
   .equipment-repair__title {
-    font-family: "TT Lakes Medium";
+    font-family: "TT Lakes Compressed";
     font-weight: 500;
     font-style: normal;
     color: #7e7e82;
@@ -13,7 +21,11 @@
     background-color: $white;
 
     .equipment-repair__title__text {
-      padding: 16px 772px 16px 32px;
+      padding: 16px 72px 16px 32px;
+
+      @media (max-width: 320px) {
+        padding: 16px 52px 16px 15px;
+      }
     }
   }
 
@@ -24,6 +36,10 @@
     align-content: space-between;
     padding: 30px 20px 21px 0px;
 
+    @media (max-width: 320px) {
+      display: none;
+    }
+
     .equipment-repair__item__showAll {
       display: none;
     }
@@ -31,6 +47,36 @@
     .equipment-repair__item__showAll-flex {
       display: flex;
       margin-top: 20px;
+    }
+    .equipment-repair__item__hidden {
+      height: 160px;
+      width: 240px;
+      border-radius: 6px;
+      background-color: $white;
+      margin-left: 32px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      .item__text {
+        font-family: "TT Lakes";
+        font-weight: 500;
+        font-style: normal;
+        color: #7e7e82;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin: 16px 8px 20px 16px;
+      }
+
+      .item__arrow {
+        margin: 70px 16px 16px 184px;
+
+        @media (max-width: 768px) {
+          margin: 70px 16px 16px 154px;
+        }
+      }
     }
 
     .equipment-repair__item {
@@ -40,39 +86,112 @@
       background-color: $white;
       margin-left: 32px;
 
+      @media (max-width: 768px) {
+        width: 215px;
+
+        //   visibility-hidden {
+        //   visibility: hidden;
+        // }
+      }
+
       .item__text {
-        font-family: "TT Lakes Medium";
+        font-family: "TT Lakes";
         font-weight: 500;
         font-style: normal;
         color: #7e7e82;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
-        margin: 16px 88px 20px 16px;
+        margin: 16px 8px 20px 16px;
       }
 
       .item__arrow {
         margin: 70px 16px 16px 184px;
+
+        @media (max-width: 768px) {
+          margin: 70px 16px 16px 154px;
+        }
       }
     }
   }
   .equpment-repair__showAll {
-    padding: 10px 722px 10px 35px;
+    padding: 10px 22px 10px 60px;
+
+    @media (max-width: 320px) {
+      display: none;
+    }
 
     .showAll__imgUp {
       transform: rotate(180deg);
     }
-    
+
     .showAll__button {
       border: none;
       cursor: pointer;
-      font-family: TT Lakes Regular;
+      font-family: TT Lakes;
       font-weight: normal;
       font-style: normal;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px;
       //   text-align: left;
+    }
+  }
+}
+
+.swiper__equipment-repair {
+  display: flex;
+  position: relative;
+  margin-top: 12px;
+  overflow: hidden;
+  margin-left: 15px;
+
+  @media (min-width: 321px) {
+    display: none;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+
+    .swiper-slide {
+      font-family: "TT Lakes";
+      font-size: 16px;
+      line-height: 24px;
+      color: #7e7e82;
+      margin-top: 20px;
+      font-weight: normal;
+      font-style: normal;
+      margin-right: 20px;
+      border-radius: 6px;
+      border: solid #eaeaea 1px;
+      background: white;
+      
+
+      .item__text {
+        font-family: "TT Lakes";
+        font-weight: 500;
+        font-style: normal;
+        color: #7e7e82;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin: 16px 8px 20px 16px;
+      }
+
+      .item__arrow {
+        margin: 0px 16px 16px 154px;
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: 768px) {
+          margin: 70px 16px 16px 154px;
+        }
+
+        @media (max-width: 320px) {
+          margin: 50px 16px 16px 150px;
+        }
+      }
     }
   }
 }
