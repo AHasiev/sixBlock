@@ -61,7 +61,8 @@
       font-size: 16px;
 
       @media (max-width: 768px) {
-        width: 768px;
+        // width: 768px;
+        width: 343px;
       }
     }
 
@@ -74,7 +75,7 @@
       color: #7e7e82;
 
       @media (max-width: 768px) {
-        width: 768px;
+        width: 260px;
       }
     }
 
@@ -97,6 +98,7 @@
 
     @media (max-width: 768px) {
       width: 720px;
+      padding: 5px 24px 0px 24px;
     }
 
     @media (max-width: 321px) {
@@ -106,11 +108,11 @@
 
   .service-prices__description {
     display: flex;
-    align-content: center;
+    align-items: center;
     margin-top: 30px;
 
     @media (max-width: 768px) {
-      width: 768px;
+      // width: 768px;
     }
 
     .description__repair-service {
@@ -148,7 +150,8 @@
       width: 119px;
 
       @media (max-width: 768px) {
-        width: 96px;
+        width: 100px;
+        margin-left: 20px;
       }
 
       a {

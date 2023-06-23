@@ -117,6 +117,10 @@
   .equpment-repair__showAll {
     padding: 10px 22px 10px 60px;
 
+    @media (max-width: 768px) {
+      padding: 10px 22px 10px 35px;
+    }
+
     @media (max-width: 320px) {
       display: none;
     }
