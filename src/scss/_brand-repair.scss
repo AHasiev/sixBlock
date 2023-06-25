@@ -5,6 +5,7 @@
 
   @media (max-width: 768px) {
     width: 768px;
+    margin-top: 70px;
   }
 
   .products__title {
@@ -245,9 +246,16 @@
   padding-top: 15px;
   margin-top: 100px;
 
+  @media (max-width: 320px) {
+    margin-top: 204px;
+    padding: 10px 50px 0px 16px
+  }
+
   @media (min-width: 321px) {
     display: none;
   }
+
+ 
 }
 
 .swiper-container {
@@ -405,26 +413,13 @@
           margin-top: 14px;
         }
       }
-    }
 
+      
+    }
     .swiper-pagination {
       color: #7e7e82;
       display: flex;
       justify-content: center;
     }
-
-    // .header-title {
-    //   font-family: "TT Lakes Compressed";
-    //   font-weight: 500;
-    //   font-style: normal;
-    //   color: #7e7e82;
-    //   font-size: 16px;
-    //   line-height: 24px;
-    //   letter-spacing: -0.2px;
-    //   text-align: left;
-    //   width: 100%;
-    //   padding: 16px 16px;
-    //   color: #7e7e82;
-    // }
   }
 }

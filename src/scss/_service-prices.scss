@@ -6,7 +6,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
-  margin: 0 auto;
+  margin-top: 50px;
 
   @media (max-width: 768px) {
     width: 768px;
@@ -32,6 +32,7 @@
 
     @media (max-width: 320px) {
       width: 320px;
+      padding: 16px 0px 16px 26px;
     }
   }
 
@@ -177,6 +178,7 @@
 
     @media (max-width: 320px) {
       margin-left: 10px;
+      width: 320px;
     }
 
     .footer__text {
@@ -208,7 +210,7 @@
 
 .swiper__container {
   display: flex;
-  // position: relative;
+  position: relative;
   overflow: hidden;
   margin-left: 15px;
 
@@ -262,12 +264,10 @@
           }
         }
     }
-
-      
-    // }
   }
 
   .swiper-pagination {
-    background: gray;
+    color: #7e7e82;
+    top: 184px
   }
 }

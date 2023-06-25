@@ -4,6 +4,7 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-left: 40px;
   color: gray;
   font-family: TT Lakes;
@@ -56,6 +57,7 @@
     font-family: TT Lakes;
     font-size: 14px;
     line-height: 16px;
+    text-align: right;
 
     @media (max-width: 768px) {
       height: 48px;
@@ -67,8 +69,7 @@
     @media (max-width: 320px) {
       margin-top: 18px;
       width: 320px;
-      text-align: center;
-      
+      text-align: center;      
     }
   }
 }

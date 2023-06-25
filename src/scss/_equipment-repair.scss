@@ -1,6 +1,5 @@
 .equipment-repair {
   width: 1119px;
-  margin: 0 auto;
   background: $light-gray;
   margin-top: 50px;
 
@@ -154,48 +153,60 @@
     display: none;
   }
 
+  
+
   .swiper-wrapper {
     display: flex;
     align-items: center;
 
-    .swiper-slide {
-      font-family: "TT Lakes";
-      font-size: 16px;
-      line-height: 24px;
-      color: #7e7e82;
-      margin-top: 20px;
-      font-weight: normal;
-      font-style: normal;
-      margin-right: 20px;
-      border-radius: 6px;
-      border: solid #eaeaea 1px;
-      background: white;
-      
+    
+    // .swiper-slide {
 
-      .item__text {
+      .laptop-repair__item {
+        width: 194px;
+        height: 160px;
         font-family: "TT Lakes";
-        font-weight: 500;
-        font-style: normal;
-        color: #7e7e82;
         font-size: 16px;
         line-height: 24px;
-        letter-spacing: -0.2px;
-        margin: 16px 8px 20px 16px;
-      }
+        color: #7e7e82;
+        margin-top: 20px;
+        font-weight: normal;
+        font-style: normal;
+        margin-right: 20px;
+        border-radius: 6px;
+        border: solid #eaeaea 1px;
+        background: white;
 
-      .item__arrow {
-        margin: 0px 16px 16px 154px;
-        width: 40px;
-        height: 40px;
-
-        @media (max-width: 768px) {
-          margin: 70px 16px 16px 154px;
+        .item__text {
+          font-family: "TT Lakes";
+          font-weight: 500;
+          font-style: normal;
+          color: #7e7e82;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          margin: 16px 8px 20px 16px;
         }
 
-        @media (max-width: 320px) {
-          margin: 50px 16px 16px 150px;
+        .item__arrow {
+          margin: 79px 16px 16px 154px;
+          width: 40px;
+          height: 40px;
         }
       }
-    }
+
+      @media (max-width: 768px) {
+        margin: 70px 16px 16px 154px;
+      }
+
+      @media (max-width: 320px) {
+        margin: 0px 16px 16px 0px;
+       
+      }
+    // }
+  }
+  
+  .swiper-pagination {
+    top: 184px
   }
 }
